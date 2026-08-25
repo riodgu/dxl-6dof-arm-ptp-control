@@ -1,0 +1,18 @@
+# DYNAMIXEL 6-DOF Arm — hardware / communication configuration.
+# joint_* lists are index-aligned with dxl_ids: dxl_ids[i] describes joint i.
+# Add a 6th entry to dxl_ids (and every joint_* list) to extend to full 6-DOF.
+
+device_name: "COM3"
+baudrate: 1000000
+protocol_version: 2.0
+
+dxl_ids: [1, 2, 3, 4, 5]
+gripper_id: 7
+
+operating_mode: 4  # Extended Position Control Mode
+
+profile_acceleration: 20
+profile_velocity: 80
+
+control_hz: 100.0
+default_move_time: 3.0

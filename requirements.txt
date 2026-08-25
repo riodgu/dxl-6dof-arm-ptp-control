@@ -1,0 +1,6 @@
+dynamixel-sdk
+pyyaml
+numpy
+pandas
+matplotlib
+pytest
